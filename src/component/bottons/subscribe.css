@@ -1,0 +1,11 @@
+.btn{
+    background: #FC427B;
+    color:rgb(255, 255, 255);
+    transition: 0.5s;
+}
+.btn:hover{
+    background: rgb(255, 255, 255);
+    color:#FC427B;
+    border: 1px solid #FC427B;
+    transition: 0.5s;
+}
