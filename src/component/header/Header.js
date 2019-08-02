@@ -20,10 +20,10 @@ const Header = ({title}) => {
                     </div> 
                     <div className="col-sm-6 text-center">
                             <form action="">
-                                <p className="text-description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias cum quia fugiat ad minus?</p>
+                                <p className="text-description"> Una Pequeña Aplicacion de Cotizacion de Cripto Monedas utilizando React Hooks</p>
                                 <input type="text" className="form-control text-center my-4" placeholder="Whrite your Email"/>
                                 <Subscribe
-                                    description="SUBSCRIBE"
+                                    description="SUBSCRIBETE"
                                 />
                             </form>
                             <Icons/>

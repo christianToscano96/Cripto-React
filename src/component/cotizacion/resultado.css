@@ -1,0 +1,24 @@
+.resultado {
+    margin-top: 2rem;
+    background: white;
+    border-radius: 5px;
+    padding:1rem;
+  }
+  .resultado h2 {
+    font-weight: bold;
+    color: #FC427B;
+  }
+  
+  
+  .resultado p {
+    font-size: 18px!important;
+    color: #FC427B;
+  }
+  .resultado p span {
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-align: right;
+  }
+  p.precio{
+    font-size: 30px!important;
+  }

@@ -42,22 +42,3 @@ input[type="submit"]{
 }
 
 
-.resultado {
-  color: white;
-
-}
-.resultado h2 {
-  font-weight: bold;
-  color: white;
-}
-
-
-.resultado p {
-  font-size: 18px!important;
-}
-.resultado p span {
-  font-weight: bold;
-}
-p.precio{
-  font-size: 30px!important;
-}
