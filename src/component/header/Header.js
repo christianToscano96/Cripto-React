@@ -3,6 +3,7 @@ import './header.css';
 import Logo from './logo/Logo';
 import Subscribe from '../bottons/Subscribe';
 import Icons from '../icons-redes/Icons';
+import img from '../../img/img3.jpg';
 
 const Header = ({title}) => {
     return ( 
@@ -15,7 +16,7 @@ const Header = ({title}) => {
                     </div>
                     
                     <div class="col-sm-6">
-                            <img src="./img/img3.jpg" class="img-fluid" alt="img"/>
+                        <img src={img} class="img-fluid" alt="img"/>
                     </div> 
                     <div class="col-sm-6 text-center">
                             <form action="">

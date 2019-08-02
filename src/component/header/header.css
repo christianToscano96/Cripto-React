@@ -6,6 +6,7 @@ header{
     color: #FC427B;
     letter-spacing: 2px;
 }
+
 @media (max-width: 670px){
     h1{
         font-size: 25px !important;

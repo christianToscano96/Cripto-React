@@ -12,7 +12,55 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
 .text-description{
-  letter-spacing: 2px;
-  
+  letter-spacing: 2px; 
+}
+
+.cripto-container{
+ background: #FC427B;
+}
+
+label {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 2rem;
+}
+input[type="submit"]{
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
+  height: auto;
+}
+.error {
+  background-color: #b7322c;
+  padding: 1rem;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+
+.resultado {
+  color: white;
+
+}
+.resultado h2 {
+  font-weight: bold;
+  color: white;
+}
+
+
+.resultado p {
+  font-size: 18px!important;
+}
+.resultado p span {
+  font-weight: bold;
+}
+p.precio{
+  font-size: 30px!important;
 }
