@@ -41,4 +41,13 @@ input[type="submit"]{
   height: auto;
 }
 
+@media (max-width: 670px){
+  .img-cripto{
+      height: 200px!important;
+      display:block;
+      margin:auto;
+      margin-top: 1px!important;
+      margin-bottom: 12px!important;
+  }
 
+}
