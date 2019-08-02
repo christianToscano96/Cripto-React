@@ -7,7 +7,7 @@ function Formulario() {
     const [criptomonedas, getCriptomonedas] = useState([]);
     const [monedaCotizar, getMonedaCotizar] = useState('');
     const [criptoCotizar, getCotizar] = useState('');
-    const [error, gerError] = useState(false);
+    const [error, getError] = useState(false);
 
     useEffect(() => {
 
@@ -23,10 +23,25 @@ function Formulario() {
         consultarApi();
     }, []);
 
+    //validar que el usuario llene ambos campos
+    const CotizarMoneda = e => {
+        e.preventDefault();
+
+        //validar si ambos capos estan llenos
+        if(monedaCotizar === '' || criptoCotizar === '') {
+            getError(true);
+            return;
+        }
+        //pasar los datos al componente principal
+        getError(false);
+    }
 
 
     return(
-        <form className="container formulario">
+        <form 
+            onSubmit={CotizarMoneda}
+            className="container formulario"
+        >
             <div className="row">
                 <label>Elige tu Moneda</label>
                 <select 
@@ -45,7 +60,7 @@ function Formulario() {
                 <label>Elige tu Criptomoneda</label>
                 <select 
                 onChange={ e => getCotizar(e.target.value)}
-                className="custom-select"
+                className="custom-select "
                 >
                     <option value="">- Elige tu Criptomoneda -</option>
                     {criptomonedas.map(criptomoneda => (
@@ -56,6 +71,8 @@ function Formulario() {
                     ))}
                 </select>
             </div>
+
+            <input type="submit" className="btn btn-light col-12" value="Calcular" />
         </form>
     )
 }
