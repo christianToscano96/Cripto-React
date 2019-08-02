@@ -3,6 +3,7 @@ import axios from 'axios';
 import Header from './component/header/Header';
 import Formulario from './component/formulario/Formulario';
 import Spinner from './component/spinner/Spinner';
+import Resultado from './component/cotizacion/Resultado';
 
 import img from './img/cryptomonedas.png';
 
@@ -12,6 +13,7 @@ function App() {
   const [moneda, getMoneda] = useState('');
   const [criptomoneda, getCripto] = useState('');
   const [load, getLoad] = useState(false);
+  const [result, getResult] = useState({});
 
   useEffect(() => {
     const cotizarCriptomoneda = async () => {
@@ -22,21 +24,20 @@ function App() {
 
       const res = await axios.get(url);
 
-      console.log(res);
-
       //mostrando el spinner
       getLoad(true);
 
-      //pasado los 3s ocultar el spinner
+      //pasado los 3s ocultar el spinner y agrregar el resultados
       setTimeout(() => {
         getLoad(false)
+        getResult(res.data.DISPLAY[criptomoneda][moneda]);
       }, 3000);
     }
     cotizarCriptomoneda();
   }, [ criptomoneda, moneda]);
 
   //mostrar el spinner o el resultado
-  const componenteSpiner = (load) ? <Spinner/> : null;
+  const componente = (load) ? <Spinner/> : <Resultado resultado={result}/>;
 
   return (
     <div className="App">
@@ -55,7 +56,7 @@ function App() {
                 getCripto={getCripto}
               />
 
-              {componenteSpiner}
+              {componente}
           </div>
 
         </div>

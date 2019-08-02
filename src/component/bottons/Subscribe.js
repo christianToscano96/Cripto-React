@@ -3,7 +3,7 @@ import './subscribe.css';
 
 const Subscribe = ({description}) => {
     return ( 
-        <button class="btn btn-light col-md-4">
+        <button className="btn btn-light col-md-4">
              {description}
          </button>
      );

@@ -10,18 +10,18 @@ const Header = ({title}) => {
       <header className="header">
            <div className="container">
                 <div className="row">
-                    <div class="col-sm-12 my-4">
+                    <div className="col-sm-12 my-4">
                         <Logo/>
-                        <h1 class="text-uppercase display-3 font-weight-bold text-center mt-2 ">{title}</h1>
+                        <h1 className="text-uppercase display-3 font-weight-bold text-center mt-2 ">{title}</h1>
                     </div>
                     
-                    <div class="col-sm-6">
-                        <img src={img} class="img-fluid" alt="img"/>
+                    <div className="col-sm-6">
+                        <img src={img} className="img-fluid" alt="img"/>
                     </div> 
-                    <div class="col-sm-6 text-center">
+                    <div className="col-sm-6 text-center">
                             <form action="">
-                                <p class="text-description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias cum quia fugiat ad minus?</p>
-                                <input type="text" class="form-control text-center my-4" placeholder="Whrite your Email"/>
+                                <p className="text-description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias cum quia fugiat ad minus?</p>
+                                <input type="text" className="form-control text-center my-4" placeholder="Whrite your Email"/>
                                 <Subscribe
                                     description="SUBSCRIBE"
                                 />

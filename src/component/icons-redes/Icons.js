@@ -3,25 +3,25 @@ import './icons.css';
 
 const Icons = () => {
     return ( 
-        <ul class="list-unstyled list-inline mt-4">
-                <li class="list-inline-item">
+        <ul className="list-unstyled list-inline mt-4">
+                <li className="list-inline-item">
                     <a href="_#">               
-                         <i class="fab fa-facebook-f"></i>               
+                         <i className="fab fa-facebook-f"></i>               
                     </a>              
                 </li>
-                <li class="list-inline-item">
+                <li className="list-inline-item">
                     <a href="_#">
-                        <i class="fab fa-instagram"></i>
+                        <i className="fab fa-instagram"></i>
                     </a>
                 </li>
-                <li class="list-inline-item">
+                <li className="list-inline-item">
                     <a href="_#">
-                         <i class="fab fa-twitter"></i>
+                         <i className="fab fa-twitter"></i>
                     </a>
                 </li>                
-                <li class="list-inline-item">
+                <li className="list-inline-item">
                      <a href="_#">
-                         <i class="fab fa-youtube"></i>
+                         <i className="fab fa-youtube"></i>
                      </a>
                 </li>
             </ul>
