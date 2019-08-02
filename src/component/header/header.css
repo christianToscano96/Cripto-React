@@ -6,6 +6,9 @@ header{
     color: #FC427B;
     letter-spacing: 2px;
 }
+.img-fluid{
+    border-radius: 10%;
+}
 
 @media (max-width: 670px){
     h1{
