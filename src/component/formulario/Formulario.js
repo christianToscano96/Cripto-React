@@ -3,7 +3,7 @@ import axios from 'axios';
 import Criptomoneda from '../criptomoneda/Criptomoneda';
 import Error from '../error/Error';
 
-function Formulario() {
+function Formulario({getMoneda, getCripto}) {
 
     const [criptomonedas, getCriptomonedas] = useState([]);
     const [monedaCotizar, getMonedaCotizar] = useState('');
@@ -35,6 +35,9 @@ function Formulario() {
         }
         //pasar los datos al componente principal
         getError(false);
+
+        getMoneda(monedaCotizar);
+        getCripto(criptoCotizar);
     }
     //mostrar el error en caso de que exista 
     const componente = (error) ? <Error mensaje="Ambos campos son Obligatorios" />: null;
