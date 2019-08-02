@@ -12,12 +12,13 @@ function App() {
       <Header
         title="Cotizador de Criptomonedas"
       />
-      <div className="container cripto-container">
-        <div className="row">
-          <div className="col-sm-6">
+      <div className="container pt-5 cripto-container">
+        <div className="row ">
+          <div className="col-sm-4">
               <img src={img} className="img-fluid" alt="imagen de criptomonedas"/>
           </div>
-          <div className="col-sm-6">
+          <div className="col-sm-8 formulario" >
+            <h1 className="text-white text-center">Cotiza Criptomonedas al Instante</h1>
               <Formulario/>
           </div>
 

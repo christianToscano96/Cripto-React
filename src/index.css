@@ -18,8 +18,13 @@ code {
 }
 
 .cripto-container{
- background: #FC427B;
+  margin-top:2rem;
+  margin-bottom:2rem;
+  padding: 2rem;
+  background: #FC427B;
+  border-radius: 15px;
 }
+
 
 label {
   color: white;
